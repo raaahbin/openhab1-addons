@@ -1,5 +1,7 @@
 # OwnTracks (formerly MQTTitude) Binding
 
+This binding has been deprecated entirely in favour of the [GPSTracker binding](https://www.openhab.org/addons/bindings/gpstracker/).
+
 [OwnTracks](http://owntracks.org), formerly known as _MQTTitude_, was developed as a replacement for the old Google Latitude service. However it is slightly different (better) in that all your location data is private - i.e. there is no 3rd party server somewhere collecting and storing your data. Instead each time your device publishes its location, it is sent to an [MQTT](http://mqtt.org/) broker of your choice. 
 
 This is where openHAB steps in, with the Mqttitude binding. The idea is that the binding will track your location and when you are 'near' to a specified location (usually your home) it will update a Switch item in openHAB, enabling presence detection.
